@@ -179,7 +179,6 @@ export function Products({ lang, showPrice = true }: { lang: Lang; showPrice?: b
 const COLL_IMGS = [
   '/images/collEngagement.jpeg',
   '/images/collWeddingBand.jpeg',
-  '/images/brand2.jpeg',
   '/images/collNecklace.jpeg',
   '/images/collEarrings.jpeg',
 ];
@@ -191,7 +190,7 @@ export function Collections({ lang }: { lang: Lang }) {
       <span className="kicker">{L.collK}</span>
       <h2 className="h2">{nl(L.collH)}</h2>
       <div className="coll">
-        <a className="coll__cell coll__cell--wide" href="#">
+        <a className="coll__cell" href="#">
           <Image src={COLL_IMGS[0]} alt="" fill style={{objectFit:'cover'}}/>
           <div><h4>{L.coll[0]}</h4></div>
         </a>
@@ -312,7 +311,7 @@ export function Service({ lang }: { lang: Lang }) {
 }
 
 // ── Reviews ──
-const REV_IMGS = ['/images/reviewCouple.jpeg', '/images/brandCraft.jpeg', '/images/brand2.jpeg'];
+const REV_IMGS = ['/images/reviewImg1.jpeg', '/images/reviewImg2.jpeg'];
 
 export function Reviews({ lang }: { lang: Lang }) {
   const L = useL(lang);
@@ -324,26 +323,26 @@ export function Reviews({ lang }: { lang: Lang }) {
           <h2 className="h-script">{L.revHead}</h2>
         </div>
       </div>
-      <div className="rev__rail">
-        {L.revs.map(([n, w, q]: string[], i: number) => (
-          <div className="rev__card" key={i}>
-            <div className="rev__photo">
-              <Image src={REV_IMGS[i]} alt="" fill style={{objectFit:'cover'}}/>
-            </div>
-            <span className="rev__stars">★★★★★</span>
-            <p className="rev__quote">"{q}"</p>
-            <div className="rev__who"><b>{n}</b><span>{w}</span></div>
+      <div className="rev__shots">
+        {REV_IMGS.map((src, i) => (
+          <div className="rev__shot" key={i}>
+            <Image src={src} alt="" width={1080} height={1080} sizes="100vw" style={{width:'100%',height:'auto'}}/>
           </div>
         ))}
-      </div>
-      <div className="prod__seeall">
-        <a href="#">{L.revAll} <Ico n="arr" s={12}/></a>
       </div>
     </section>
   );
 }
 
 // ── Locations ──
+// Directions links per city, matching locCities order: Bangkok, Chiang-Mai, Boston.
+// Bangkok falls back to a Maps search until a share link is provided.
+const STORE_MAPS = [
+  'https://www.google.com/maps/search/?api=1&query=Thalyn+Diamond+Silom+Road+Bang+Rak+Bangkok',
+  'https://maps.app.goo.gl/ptHMRiaFJgDo89nYA',
+  'https://maps.app.goo.gl/vjBLDTszY6PUHgTLA',
+];
+
 export function Locations({ lang }: { lang: Lang }) {
   const L = useL(lang);
   // Accordion: Bangkok (index 0) open by default; others collapsed.
@@ -380,7 +379,7 @@ export function Locations({ lang }: { lang: Lang }) {
                   ))}
                 </dl>
                 <div className="store__cta">
-                  <a href="#" className="store__btn">{L.locDirections}</a>
+                  <a href={STORE_MAPS[i] || '#'} target="_blank" rel="noopener noreferrer" className="store__btn">{L.locDirections}</a>
                   <a href={`tel:${tel}`} className="store__btn">{L.locCall}</a>
                   <a href="#contact" className="store__btn store__btn--primary">{L.locBook}</a>
                 </div>
