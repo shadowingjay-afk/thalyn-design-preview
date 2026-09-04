@@ -23,7 +23,7 @@ export const I18N_M = {
     ],
     storyK: "Our Story",
     storyH: "From a small\nworkshop to a\nhouse of diamonds.",
-    storyP: "Thalyn began as a family atelier in Chiang-Mai four decades ago. Today we craft exclusively in laboratory-grown diamonds — same brilliance, a fraction of the impact.",
+    storyP: "Thalyn began as a family atelier in Bangkok four decades ago. Today we craft exclusively in laboratory-grown diamonds — same brilliance, a fraction of the impact.",
     storyNumLbl: "Years · Est. 1985",
     prodK: "Our Product",
     prodH: "Signatures,\ncut to last.",
