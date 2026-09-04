@@ -127,11 +127,11 @@ export function Story({ lang }: { lang: Lang }) {
 
 // ── Products ──
 const PRODUCTS = [
-  { name: 'Solène',       cut: 'Round · 1.20 ct',   img: '/images/product1.jpeg', price: '฿185,000', tag: 'Best' },
-  { name: 'Émeraude',     cut: 'Emerald · 1.50 ct',  img: '/images/product2.jpeg', price: '฿224,000', tag: 'New' },
-  { name: 'Halo Lumière', cut: 'Cushion · 1.05 ct',  img: '/images/product3.jpeg', price: '฿168,000', tag: null },
-  { name: 'Trio Pavé',    cut: 'Band · 0.45 ct tw',  img: '/images/product4.jpeg', price: '฿78,000',  tag: null },
-  { name: 'Étoile',       cut: 'Pendant · 0.50 ct',  img: '/images/product5.jpeg', price: '฿94,000',  tag: null },
+  { name: 'The Crown',    cut: 'Round · 1.20 ct',   img: '/images/product1.jpeg', price: '฿185,000', tag: 'Best' },
+  { name: 'Amelia',       cut: 'Emerald · 1.50 ct',  img: '/images/product2.jpeg', price: '฿224,000', tag: 'New' },
+  { name: 'Maria',        cut: 'Cushion · 1.05 ct',  img: '/images/product3.jpeg', price: '฿168,000', tag: null },
+  { name: 'Aurora',       cut: 'Band · 0.45 ct tw',  img: '/images/product4.jpeg', price: '฿78,000',  tag: null },
+  { name: 'The Blossom',  cut: 'Pendant · 0.50 ct',  img: '/images/product5.jpeg', price: '฿94,000',  tag: null },
 ];
 
 export function Products({ lang, showPrice = true }: { lang: Lang; showPrice?: boolean }) {
@@ -338,7 +338,7 @@ export function Reviews({ lang }: { lang: Lang }) {
 // Directions links per city, matching locCities order: Bangkok, Chiang-Mai, Boston.
 // Bangkok falls back to a Maps search until a share link is provided.
 const STORE_MAPS = [
-  'https://www.google.com/maps/search/?api=1&query=Thalyn+Diamond+Silom+Road+Bang+Rak+Bangkok',
+  'https://maps.app.goo.gl/iWM5ViogX342zwcJA',
   'https://maps.app.goo.gl/ptHMRiaFJgDo89nYA',
   'https://maps.app.goo.gl/vjBLDTszY6PUHgTLA',
 ];
