@@ -339,7 +339,7 @@ export function Reviews({ lang }: { lang: Lang }) {
 // Bangkok falls back to a Maps search until a share link is provided.
 const STORE_MAPS = [
   'https://maps.app.goo.gl/iWM5ViogX342zwcJA',
-  'https://maps.app.goo.gl/ptHMRiaFJgDo89nYA',
+  'https://maps.app.goo.gl/T2C4apuMMwLsr17B7',
   'https://maps.app.goo.gl/vjBLDTszY6PUHgTLA',
 ];
 

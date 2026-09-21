@@ -89,7 +89,7 @@ export const I18N_M = {
     locCities: [
       ["Bangkok","Flagship","Silom Road, Bang Rak\nBangkok 10500, Thailand","099 639 6445"],
       ["Chiang-Mai","Atelier","Wasabi Park, Mahidol Rd, Nong Hoi\nMueang Chiang-Mai 50000","099 639 6445"],
-      ["Boston","USA Showroom","Newbury Street, Back Bay\nBoston, MA 02116","+1 617 555 0199"],
+      ["Boston","USA Showroom","Contact for advice\nE-mail : diamondthalyn@gmail.com","+1 617 555 0199"],
     ],
     locHours: [["Mon–Sat","10:30 — 19:00"],["Sun","12:00 — 18:00"]],
     contK: "Get in touch",
@@ -199,7 +199,7 @@ export const I18N_M = {
     locCities: [
       ["กรุงเทพฯ","สาขาหลัก","ถนนสีลม บางรัก\nกรุงเทพมหานคร 10500","099 639 6445"],
       ["เชียงใหม่","อะตอเลียร์","Wasabi Park ถ.มหิดล ต.หนองหอย\nอ.เมือง เชียงใหม่ 50000","099 639 6445"],
-      ["Boston","USA Showroom","Newbury Street, Back Bay\nBoston, MA 02116","+1 617 555 0199"],
+      ["Boston","USA Showroom","Contact for advice\nE-mail : diamondthalyn@gmail.com","+1 617 555 0199"],
     ],
     locHours: [["จ.–ส.","10:30 — 19:00"],["อา.","12:00 — 18:00"]],
     contK: "ติดต่อเรา",
@@ -309,7 +309,7 @@ export const I18N_M = {
     locCities: [
       ["曼谷","旗舰店","Silom Road, Bang Rak\nBangkok 10500, Thailand","099 639 6445"],
       ["清迈","工坊","Wasabi Park, Mahidol Rd, Nong Hoi\nMueang Chiang-Mai 50000","099 639 6445"],
-      ["波士顿","美国展厅","Newbury Street, Back Bay\nBoston, MA 02116","+1 617 555 0199"],
+      ["波士顿","美国展厅","Contact for advice\nE-mail : diamondthalyn@gmail.com","+1 617 555 0199"],
     ],
     locHours: [["周一–周六","10:30 — 19:00"],["周日","12:00 — 18:00"]],
     contK: "联系我们",
