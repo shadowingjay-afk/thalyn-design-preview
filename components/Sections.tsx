@@ -371,6 +371,7 @@ export function Locations({ lang }: { lang: Lang }) {
               </button>
               <div className="store__body">
                 <p className="store__addr">{addr}</p>
+                {i !== 2 && (
                 <dl className="store__hours">
                   {L.locHours.map(([d, h]: string[], j: number) => (
                     <Fragment key={j}>
@@ -378,11 +379,14 @@ export function Locations({ lang }: { lang: Lang }) {
                     </Fragment>
                   ))}
                 </dl>
+                )}
+                {i !== 2 && (
                 <div className="store__cta">
                   <a href={STORE_MAPS[i] || '#'} target="_blank" rel="noopener noreferrer" className="store__btn">{L.locDirections}</a>
                   <a href={`tel:${tel}`} className="store__btn">{L.locCall}</a>
                   <a href="#contact" className="store__btn store__btn--primary">{L.locBook}</a>
                 </div>
+                )}
               </div>
             </div>
           );
