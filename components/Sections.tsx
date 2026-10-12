@@ -127,11 +127,11 @@ export function Story({ lang }: { lang: Lang }) {
 
 // ── Products ──
 const PRODUCTS = [
-  { name: 'The Crown',    cut: 'Round · 1.20 ct',   img: '/images/product1.jpeg', price: '฿185,000', tag: 'Best' },
-  { name: 'Amelia',       cut: 'Emerald · 1.50 ct',  img: '/images/product2.jpeg', price: '฿224,000', tag: 'New' },
-  { name: 'Maria',        cut: 'Cushion · 1.05 ct',  img: '/images/product3.jpeg', price: '฿168,000', tag: null },
-  { name: 'Aurora',       cut: 'Band · 0.45 ct tw',  img: '/images/product4.jpeg', price: '฿78,000',  tag: null },
-  { name: 'The Blossom',  cut: 'Pendant · 0.50 ct',  img: '/images/product5.jpeg', price: '฿94,000',  tag: null },
+  { name: 'The Crown',    caption: 'recommend from 1-5ct', img: '/images/Tyalyn-web-01.jpg', price: '฿185,000', tag: 'Best' },
+  { name: 'Amelia',       caption: 'recommend from 1-5ct', img: '/images/Tyalyn-web-02.jpg', price: '฿224,000', tag: 'New' },
+  { name: 'Maria',        caption: 'recommend from 1-5ct', img: '/images/Tyalyn-web-03.jpg', price: '฿168,000', tag: null },
+  { name: 'Aurora',       caption: 'recommend from 1-4ct', img: '/images/Tyalyn-web-04.jpg', price: '฿78,000',  tag: null },
+  { name: 'The Blossom',  caption: '',                     img: '/images/product5.jpeg',       price: '฿94,000',  tag: null },
 ];
 
 export function Products({ lang, showPrice = true }: { lang: Lang; showPrice?: boolean }) {
@@ -155,7 +155,7 @@ export function Products({ lang, showPrice = true }: { lang: Lang; showPrice?: b
               <button className="card__fav" aria-label="Save"><Ico n="heart" s={14}/></button>
             </div>
             <div className="card__meta">
-              <span className="card__cut">{p.cut}</span>
+              {p.caption && <span className="card__cut">{p.caption}</span>}
               <h3 className="card__name">{p.name}</h3>
               <div className="card__price">
                 {showPrice
