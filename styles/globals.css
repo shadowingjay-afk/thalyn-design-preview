@@ -104,6 +104,7 @@ a { color: inherit; text-decoration: none; }
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
+  scroll-padding-top: 120px;
 }
 .phone__scroll::-webkit-scrollbar { display: none; }
 
@@ -252,7 +253,7 @@ a { color: inherit; text-decoration: none; }
 .btn--ox   { background: var(--oxblood); color: #fff; border-color: var(--oxblood); }
 
 .hero__pill {
-  position: absolute; right: 16px; top: 78px; z-index: 3;
+  position: absolute; right: 16px; top: 100px; z-index: 3;
   display: inline-flex; align-items: center; gap: 6px;
   padding: 8px 14px;
   border-radius: 999px;
@@ -296,7 +297,7 @@ a { color: inherit; text-decoration: none; }
 /* =========================================================
    Section helpers
    ========================================================= */
-.section { padding: 60px 24px; }
+.section { padding: 60px 24px; scroll-margin-top: 120px; }
 .section--tight { padding: 40px 24px; }
 .section--cream { background: var(--cream); }
 .section--paper { background: var(--paper); }
