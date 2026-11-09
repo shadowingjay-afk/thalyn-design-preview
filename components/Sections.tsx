@@ -127,14 +127,14 @@ export function Story({ lang }: { lang: Lang }) {
 
 // ── Products ──
 const PRODUCTS = [
-  { name: 'The Crown',    caption: 'recommend from 1-5ct', img: '/images/Tyalyn-web-01.jpg', price: '฿185,000', tag: 'Best' },
-  { name: 'Amelia',       caption: 'recommend from 1-5ct', img: '/images/Tyalyn-web-02.jpg', price: '฿224,000', tag: 'New' },
-  { name: 'Maria',        caption: 'recommend from 1-5ct', img: '/images/Tyalyn-web-03.jpg', price: '฿168,000', tag: null },
-  { name: 'Aurora',       caption: 'recommend from 1-4ct', img: '/images/Tyalyn-web-04.jpg', price: '฿78,000',  tag: null },
-  { name: 'The Blossom',  caption: '',                     img: '/images/product5.jpeg',       price: '฿94,000',  tag: null },
+  { name: 'The Crown',    caption: 'recommend from 1-5ct', img: '/images/Tyalyn-web-01.jpg', tag: 'Best' },
+  { name: 'Amelia',       caption: 'recommend from 1-5ct', img: '/images/Tyalyn-web-02.jpg', tag: 'New' },
+  { name: 'Maria',        caption: 'recommend from 1-5ct', img: '/images/Tyalyn-web-03.jpg', tag: null },
+  { name: 'Aurora',       caption: 'recommend from 1-4ct', img: '/images/Tyalyn-web-04.jpg', tag: null },
+  { name: 'The Blossom',  caption: '',                     img: '/images/product5.jpeg',       tag: null },
 ];
 
-export function Products({ lang, showPrice = true }: { lang: Lang; showPrice?: boolean }) {
+export function Products({ lang }: { lang: Lang }) {
   const L = useL(lang);
   const [f, setF] = useState(0);
   return (
@@ -158,10 +158,6 @@ export function Products({ lang, showPrice = true }: { lang: Lang; showPrice?: b
               {p.caption && <span className="card__cut">{p.caption}</span>}
               <h3 className="card__name">{p.name}</h3>
               <div className="card__price">
-                {showPrice
-                  ? <span>{p.price}<small> {L.prodFrom}</small></span>
-                  : <span style={{color:'var(--taupe)',fontSize:11,letterSpacing:'0.18em',textTransform:'uppercase'}}>Inquire</span>
-                }
                 <em>›</em>
               </div>
             </div>

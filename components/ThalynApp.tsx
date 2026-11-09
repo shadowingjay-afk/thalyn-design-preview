@@ -30,7 +30,6 @@ function shade(hex: string, percent: number): string {
 export default function ThalynApp() {
   const [lang, setLang] = useState<Lang>('en');
   const [accent, setAccent] = useState('#5A1F21');
-  const [showPrice] = useState(true);
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const scrollerRef = useRef<HTMLDivElement>(null);
@@ -70,7 +69,7 @@ export default function ThalynApp() {
           <Ribbon lang={lang}/>
           <Values lang={lang}/>
           <Story lang={lang}/>
-          <Products lang={lang} showPrice={showPrice}/>
+          <Products lang={lang}/>
           <Collections lang={lang}/>
           <Craft lang={lang}/>
           <LabGrown lang={lang}/>
